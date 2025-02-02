@@ -1,0 +1,10 @@
+^C:\PROGRAMMING\ASYNC-DEFER\BUILD\CMAKEFILES\3FD1D7EC910DD23FE84C106C2A6480C0\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/programming/async-defer -BC:/programming/async-defer/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/programming/async-defer/build/defer.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
